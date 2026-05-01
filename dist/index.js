@@ -22,7 +22,7 @@ function createUsePath(from, to) {
     return dirname
         .slice(0, dirname.length - extname.length)
         .replaceAll("\\", "/")
-        .replace(/(^|\/) _([^/]+)$/u, "$1$2");
+        .replace(/(^|\/)_([^/]+)$/u, "$1$2");
 }
 function createContent(options, variableNames) {
     const file = createUsePath(options.from, options.to);
