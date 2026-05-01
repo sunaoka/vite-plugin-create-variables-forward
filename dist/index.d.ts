@@ -5,5 +5,5 @@ export interface Options {
     module: string;
     modules?: string[];
 }
-declare function variablesForward(options: Options): Plugin;
+export declare function variablesForward(options: Options): Plugin;
 export default variablesForward;
