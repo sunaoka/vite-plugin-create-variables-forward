@@ -63,7 +63,7 @@ function createContent(options: Options, variableNames: string[]): string {
   return lines.join("\n");
 }
 
-function variablesForward(options: Options): Plugin {
+export function variablesForward(options: Options): Plugin {
   return {
     name: PLUGIN_NAME,
     buildStart() {
