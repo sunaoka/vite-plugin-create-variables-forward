@@ -1,6 +1,6 @@
 {
   "name": "@sunaoka/vite-plugin-create-variables-forward",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Vite plugin that automatically generates `@forward with` from SCSS variables.",
   "license": "MIT",
   "author": "sunaoka <sunaoka@pocari.org>",
