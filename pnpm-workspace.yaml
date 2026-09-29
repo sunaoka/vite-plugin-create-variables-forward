@@ -1,1 +1,4 @@
 minimumReleaseAge: 10080
+
+overrides:
+  typescript: "<6.1.0"
