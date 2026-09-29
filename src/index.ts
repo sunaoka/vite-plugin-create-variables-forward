@@ -77,9 +77,16 @@ function variablesForward(options: Options): Plugin {
 
       const content = createContent(options, variables);
 
-      fs.writeFile(options.to, `${content}\n`, (err) => {
-        if (err) throw err;
-        console.info(`Created ${options.to}`);
+      return new Promise<void>((resolve, reject) => {
+        fs.writeFile(options.to, `${content}\n`, (err) => {
+          if (err) {
+            reject(err);
+            return;
+          }
+
+          console.info(`Created ${options.to}`);
+          resolve();
+        });
       });
     },
   };
