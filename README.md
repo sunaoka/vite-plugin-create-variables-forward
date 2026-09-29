@@ -5,7 +5,7 @@ A Vite plugin that automatically generates `@forward with` from SCSS variables.
 ## Installation
 
 ```bash
-# #1.0.1 is the version
+# #1.0.2 is the version
 pnpm add -D git+https://github.com/sunaoka/vite-plugin-create-variables-forward#1.0.2
 ```
 
